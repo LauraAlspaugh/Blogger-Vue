@@ -1,6 +1,11 @@
 <template>
   <div class="container-fluid">
     <section class="row">
+      <div class="col-12 text-center m-3 blog-title">
+        <h1>The Blog <i class="mdi mdi-feather"></i></h1>
+      </div>
+    </section>
+    <section class="row">
       <div v-for="story in stories" :key="story.id" class="col-12">
         <StoryCard :storyProp="story" />
       </div>
@@ -38,4 +43,11 @@ export default {
 }
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.blog-title {
+  font-size: 90px;
+  font-family: fantasy;
+  font-weight: bold;
+  color: black;
+}
+</style>
